@@ -1,20 +1,47 @@
 <h1>Converter</h1>
+<div class="container">
+    <div class="col-md-3">
+        <button class="btn button-primary">
+            <f:link.action controller="Mass" action="convert">  Masseumrechner
+            </f:link.action>
+        </button>
+    </div>
+    <div class="col-md-3">
+        <button class="btn button-primary">
+            <f:link.action controller="Pressure" action="convert"> Druckumrechner
+            </f:link.action>
+        </button>
+    </div>
+    <div class="col-md-3">
+        <button class="btn button-primary">
+            <f:link.action controller="Dimension" action="convert">Entfernungsumrechner
+            </f:link.action>
+        </button>
+    </div>
+    <div class="col-md-3">
+        <button class="btn button-primary">
+            <f:link.action controller="Distance" action="convert">  Geschwindigkeitsumrechner
+            </f:link.action>
+        </button>
+    </div>
+</div>
+<div class="container" id="kilos">
 <f:form action="count" id="mass"  name="mass">
     <div class="container">
         <div class="col-md-3">
-            <label>Kilograms</label>
+            <label>Kilogramm (kg)</label>
             <f:form.textfield type="text" value="{kilogram}" name="kilogram" property="kilogram" />
         </div>
         <div class="col-md-3">
-            <label>Ton</label>
+            <label>Tonnen (t)</label>
             <f:form.textfield type="text" value="{ton}" name="ton" property="ton"  />
         </div>
         <div class="col-md-3">
-            <label>Gram</label>
+            <label>Gramm (g)</label>
             <f:form.textfield type="text" value="{gram}" name="gram" property="gram"  />
         </div>
         <div class="col-md-3">
-            <label>Pound</label>
+            <label>Pfund (lb)</label>
             <f:form.textfield type="text" value="{pound}" name="pound" property="pound" />
         </div>
         <br>
@@ -24,3 +51,4 @@
     <f:form.submit value="Calculate" class="btn btn-primary"/>
     </div>
 </f:form>
+</div>

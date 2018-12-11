@@ -9,11 +9,17 @@ call_user_func(
             'Converter.DeepConverter',
             'Converter',
             [
-                'Mass' => 'convert,count'
+                'Mass' => 'convert,count',
+                'Pressure' => 'convert,count',
+                'Dimension' => 'convert,count',
+                'Distance' => 'convert,count'
             ],
             // non-cacheable actions
             [
-                'Mass' => 'convert,count'
+                'Mass' => 'convert,count',
+                'Pressure' => 'convert,count',
+                'Dimension' => 'convert,count',
+                'Distance' => 'convert,count'
             ]
         );
 
